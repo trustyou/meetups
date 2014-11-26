@@ -12,8 +12,8 @@ In this meetup we shared some insights into the TrustYou big data tech stack, an
 Install Apache Pig, e.g. from their website. No Hadoop necessary! Alternatively, give the Hortonworks sandbox a try if you're planning to try out other Hadoop-related technologies as well. Then, run this:
 
 ```
-cd pig
-./run_examples.sh
+$ cd big-data/pig
+$ ./run_examples.sh
 ```
 
 Look in the *.tsv sub folders for the output - when run locally, Apache Pig mimics the folder structure of job output in the HDFS, so the data will be in part files.
@@ -23,6 +23,19 @@ Look in the *.tsv sub folders for the output - when run locally, Apache Pig mimi
 Install dependencies by running `pip install -r requirements.txt` from luigi folder. Then, run:
 
 ```
-cd luigi
-./run_example.sh
+$ cd big-data/luigi
+$ ./run_example.sh
+```
+
+# [Cluj.py "Extending Python in C" meetup](http://www.meetup.com/Cluj-py/events/218034932/)
+
+We had a look behind the scenes of CPython, the reference implementation of Python, and its C API which allows you to extend the Python language in C. Finally we checked out [Cython](http://cython.org/), which seems to be the sanest way of writing C extensions of Python.
+
+In the examples we focused on benchmarking different implementations of QuickSort in Python, C and Cython. Before trying them, run `pip install -r requirements.txt` from the python-c folder. I propose to run the following inside a [virtualenv](http://virtualenv.readthedocs.org/en/latest/):
+
+```
+$ virtualenv venv
+$ . venv/bin/activate 
+(venv) $ cd python-c
+(venv) $ ./run_examples.sh
 ```
