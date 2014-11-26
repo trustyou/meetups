@@ -1,0 +1,4 @@
+pig/*.log
+pig/*.CSV
+pig/*.tsv/*
+luigi/data/*
