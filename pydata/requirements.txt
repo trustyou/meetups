@@ -1,0 +1,5 @@
+cython
+gensim
+luigi >= 2.0
+nltk >= 3.0
+scrapy >= 1.0
