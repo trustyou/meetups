@@ -3,6 +3,18 @@ meetups
 
 Code samples and materials for tech talks and meetups hosted by TrustYou
 
+# [PyData Berlin](http://www.meetup.com/PyData-Berlin/events/226240128/)
+
+In this meetup I showed how a pipeline similar to TrustYou's - crawl, analyze, serve - can be built out of popular Python libraries. And then how it can be scaled up.
+
+```
+$ cd pydata
+$ pip install -r requirements.txt # e.g. in a virtualenv
+$ ./run_example.sh
+```
+
+The above example will crawl meetup.com to discover all meetups (runs a few hours!), and then build a Word2Vec model based on their descriptions.
+
 # [BigData/DataScience Cluj-Napoca meetup](http://www.meetup.com/Big-Data-Data-Science-Meetup-Cluj-Napoca/events/216156792/)
 
 In this meetup we shared some insights into the TrustYou big data tech stack, and gave introductions to two tools we've found useful: [Apache Pig](http://pig.apache.org/) and [Luigi](https://github.com/spotify/luigi). The examples from the slides are contained in this repo.
