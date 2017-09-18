@@ -3,7 +3,11 @@ meetups
 
 Code samples and materials for tech talks and meetups hosted by TrustYou
 
-# [PyData Berlin](http://www.meetup.com/PyData-Berlin/events/226240128/)
+## [Smart Data Munich](https://www.meetup.com/SmartData/events/237731342/)
+
+Example combining spaCy and Keras for a simple machine learning exercise. See [README.md](smart-data/README.md).
+
+## [PyData Berlin](http://www.meetup.com/PyData-Berlin/events/226240128/)
 
 In this meetup I showed how a pipeline similar to TrustYou's - crawl, analyze, serve - can be built out of popular Python libraries. And then how it can be scaled up.
 
@@ -15,11 +19,11 @@ $ ./run_example.sh
 
 The above example will crawl meetup.com to discover all meetups (runs a few hours!), and then build a Word2Vec model based on their descriptions.
 
-# [BigData/DataScience Cluj-Napoca meetup](http://www.meetup.com/Big-Data-Data-Science-Meetup-Cluj-Napoca/events/216156792/)
+## [BigData/DataScience Cluj-Napoca meetup](http://www.meetup.com/Big-Data-Data-Science-Meetup-Cluj-Napoca/events/216156792/)
 
 In this meetup we shared some insights into the TrustYou big data tech stack, and gave introductions to two tools we've found useful: [Apache Pig](http://pig.apache.org/) and [Luigi](https://github.com/spotify/luigi). The examples from the slides are contained in this repo.
 
-## Apache Pig
+### Apache Pig
 
 Install Apache Pig, e.g. from their website. No Hadoop necessary! Alternatively, give the Hortonworks sandbox a try if you're planning to try out other Hadoop-related technologies as well. Then, run this:
 
@@ -30,7 +34,7 @@ $ ./run_examples.sh
 
 Look in the *.tsv sub folders for the output - when run locally, Apache Pig mimics the folder structure of job output in the HDFS, so the data will be in part files.
 
-## Luigi
+### Luigi
 
 Install dependencies by running `pip install -r requirements.txt` from luigi folder. Then, run:
 
@@ -39,7 +43,7 @@ $ cd big-data/luigi
 $ ./run_example.sh
 ```
 
-# [Cluj.py "Extending Python in C" meetup](http://www.meetup.com/Cluj-py/events/218034932/)
+## [Cluj.py "Extending Python in C" meetup](http://www.meetup.com/Cluj-py/events/218034932/)
 
 We had a look behind the scenes of CPython, the reference implementation of Python, and its C API which allows you to extend the Python language in C. Finally we checked out [Cython](http://cython.org/), which seems to be the sanest way of writing C extensions of Python.
 
